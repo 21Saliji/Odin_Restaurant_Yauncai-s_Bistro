@@ -1,4 +1,3 @@
-import bistroImg from './images/bistro.png';
 export function loadHome() {
     const content = document.getElementById('content');
     
@@ -7,21 +6,12 @@ export function loadHome() {
 
     
     const headline = document.createElement('h1');
-    headline.textContent = "The Yauncai's Bistro";
+    headline.textContent = "Yauncai's Bistro";
     content.appendChild(headline);
 
-    const figure = document.createElement('figure');
-    const image = document.createElement('img');
-    image.src = bistroImg;
-    image.alt = 'Inside of a cozy restaurant';
-    image.width = 600;
 
-    figure.appendChild(image);
-    content.appendChild(figure);
-
-    
     const welcomePara = document.createElement('p');
-    welcomePara.textContent = "Welcome to The Yauncai's Bistro, where we serve the best imaginary food in the digital world!";
+    welcomePara.textContent = "Welcome to Yauncai's Bistro, where we serve the best imaginary food in the digital world!";
     content.appendChild(welcomePara);
 
     const storyPara = document.createElement('p');
