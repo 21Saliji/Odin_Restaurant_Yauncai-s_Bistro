@@ -11,12 +11,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/template.html', 
+      template: './src/index.html', 
     }),
   ],
   devServer: {
     static: './dist',
-    watchFiles: ['./src/template.html'], 
+    watchFiles: ['./src/index.html'], 
   },
    module: {
     rules: [
